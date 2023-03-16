@@ -15,4 +15,6 @@ jobs:
     container: klakegg/hugo:ext-ubuntu
     steps:
       - uses: actions/checkout@v3
-      - run: hugo version  # temporarily
+        with:
+          submodules: true
+      - run: hugo
